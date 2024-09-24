@@ -1,82 +1,72 @@
-# 토론이 🐶
+# Debati 🐶
 
-토론이는 초등학교 고학년 학생들을 대상으로 하는 토론 AI입니다! 사용자가 웹 인터페이스를 통해 토론이와 상호작용할 수 있습니다. 토론이는 사용자의 질문에 대한 답변을 생성하고 반환하며, 실시간 상호작용으로 질문을 이해하고 대응합니다.
+Debati is a debate AI for upper elementary school students! Users can interact with Debati through a web interface. Debati generates and returns answers to users' questions, understanding and responding to questions in real-time interaction.
 
-## 목차
-- [설치 가이드](#설치-가이드)
-- [실행 방법](#실행-방법)
-- [사용법](#사용법)
-- [문의](#문의)
-- [라이선스](#라이선스)
-- [기여](#기여)
+## Table of Contents
+- [Installation Guide](#installation-guide)
+- [How to Run](#how-to-run)
+- [Usage](#usage)
+- [Inquiries](#inquiries)
+- [License](#license)
+- [Contribution](#contribution)
 
-## 설치 가이드 🚀
+## Installation Guide 🚀
 
-### 시스템 요구 사항
-
-- Python 3.8 이상
-- 패키지 관리 도구 Poetry
+### System Requirements
+- Python 3.8 or higher
+- Package management tool Poetry
 - OpenAI API Key
 
-### 패키지 관리 도구 Poetry 설치
+### Installing Package Management Tool Poetry
+Install 'Poetry', a tool for managing packages in Python. Poetry helps automate package version management.
 
-Python에서 패키지를 관리하기 위한 도구인 'Poetry'를 설치합니다. Poetry는 패키지 버전 관리를 자동화하여 도와줍니다.
-
-### 패키지 설치
-
-토론이를 실행하기 위한 라이브러리를 설치합니다. 라이브러리는 Python 패키지 설치 도구인 Poetry를 사용하여 설치합니다. 설치를 진행하려면 터미널에서 프로젝트 위치로 이동한 후 다음 명령어를 입력하세요:
+### Package Installation
+Install the libraries required to run Debati. Libraries are installed using Poetry, a Python package installation tool. To proceed with the installation, navigate to the project location in the terminal and enter the following command:
 
 ```
 poetry install
 ```
 
-## Streamlit 설정
-
-Streamlit 웹 인터페이스를 위해, `.streamlit/secrets.toml` 파일에 필요한 설정을 추가합니다. 이 파일은 Streamlit 앱의 설정 정보를 저장하는 데 사용됩니다. 다음은 설정 예제입니다:
+## Streamlit Configuration
+For the Streamlit web interface, add the necessary settings to the `.streamlit/secrets.toml` file. This file is used to store configuration information for the Streamlit app. Here's an example configuration:
 
 ```toml
 [api]
 openai_api_key = "your_openai_api_key_here"
-
 [settings]
 temperature = 1
 system_prompt = "You are a helpful assistant."
 ```
 
-## 실행 방법 🖥️
+## How to Run 🖥️
 
-### 로컬에서의 실행
+### Running Locally
+You can run the code using Poetry with the following command:
 
-Poetry를 사용하여 아래 명령어로 코드를 실행할 수 있습니다:
-
-#### 토론이 실행 (Web Interface)
-
+#### Running Debati (Web Interface)
 ```
 poetry run streamlit run streamlit_app.py
 ```
 
-### Streamlit 웹 인터페이스 설정
+### Streamlit Web Interface Configuration
+No additional setup is required to interact with Debati through the web interface. You can run the Streamlit application locally using the command provided in the How to Run section above.
 
-웹 인터페이스를 통해 토론이와 상호작용하기 위해서는 별도의 추가 설정이 필요하지 않습니다. 위의 실행 방법 섹션에서 제공된 명령어를 사용하여 로컬에서 Streamlit 애플리케이션을 실행할 수 있습니다.
+Additionally, Debati is accessible on the web through [this link](https://singwan.school/). You can start interacting with Debati immediately by clicking on this link.
 
-또한, 토론이는 [이 링크](https://buppy-chat.streamlit.app/)를 통해 웹에서도 접근 가능합니다. 해당 링크를 클릭하면 토론이와 바로 상호작용을 시작할 수 있습니다.
+## Usage 📘
 
-## 사용법 📘
+### Using the Web Interface
+To interact with Debati on the web interface, run the Streamlit application and access the URL in a web browser. Users can start a conversation with Debati by entering messages in the chat input field. Debati responds to users' questions and interacts in real-time.
 
-### 웹 인터페이스에서 사용하기
+## Inquiries 💬
 
-웹 인터페이스에서 토론이와 상호작용하기 위해, Streamlit 애플리케이션을 실행하고 웹 브라우저에서 해당 URL로 접속하세요. 사용자는 대화 입력 필드에 메시지를 입력하여 토론이와 대화를 시작할 수 있습니다. 토론이는 실시간으로 사용자의 질문에 답변하고 상호작용합니다.
+If you have any questions or issues about the project, please let us know through the issue tracker.
 
-## 문의 💬
+## Contribution 🤝
 
-프로젝트에 대한 질문이나 이슈가 있다면, 이슈 트래커를 통해 알려주세요.
+This project follows Open Source principles in every aspect! Therefore, contributions to this project are welcome!
+- Implement new features.
+- Fix bugs.
+- Update documentation.
 
-## 기여 🤝
-
-이 프로젝트는 모든 것이 Open Source에 따라 이루어집니다! 따라서 이 프로젝트에 기여를 환영합니다!
-
-- 새로운 기능을 구현해 보세요.
-- 버그를 수정해 보세요.
-- 문서를 업데이트 해보세요.
-
-프로젝트에 대한 질문이나 의견, 제안사항이 있으시면 언제든지 이야기해 주세요! 함께 개선해 나갑시다.
+If you have any questions, opinions, or suggestions about the project, please feel free to share them! Let's improve together.
